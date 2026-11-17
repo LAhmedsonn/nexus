@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Gaming | Universo Gamer</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>NEXUS GAMING</h1>
+        <p>Tu portal definitivo sobre cultura, análisis y evolución de los videojuegos</p>
+        <nav class="tabs-nav">
+            <button class="tab-btn active" onclick="cambiarSeccion('destacados', this)">Destacados</button>
+            <button class="tab-btn" onclick="cambiarSeccion('generos', this)">Géneros</button>
+            <button class="tab-btn" onclick="cambiarSeccion('plataformas', this)">Plataformas</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCIÓN 1: DESTACADOS (Visible por defecto) -->
+        <section id="destacados" class="tab-content active">
+            <h2>Títulos y Categorías Imprescindibles</h2>
+            <p class="intro-text">Explora las experiencias más influyentes que definen la industria moderna de los videojuegos, desde mundos abiertos masivos hasta la escena competitiva global.</p>
+            
+            <div class="grid-cards">
+                <article class="card">
+                    <!-- IMAGEN 1 -->
+                    <img src="imagenes/imagen1.avif" alt="Juego de Acción y Aventura">
+                    <div class="card-content">
+                        <span class="tag">Aventura / RPG</span>
+                        <h3>Mundos Abiertos</h3>
+                        <p>Explora mapas gigantescos llenos de misiones secundarias, secretos ocultos y narrativas profundas donde cada decisión importa y transforma tu entorno.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <!-- IMAGEN 2 -->
+                    <img src="imagenes/imagen2.jpeg" alt="Juego Competitivo eSports">
+                    <div class="card-content">
+                        <span class="tag">Multijugador</span>
+                        <h3>Competitivo y eSports</h3>
+                        <p>La adrenalina de las partidas clasificatorias, el trabajo en equipo, la estrategia táctica y los reflejos al límite en los torneos más grandes del mundo.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <!-- IMAGEN 3 -->
+                    <img src="imagenes/imagen3.webp" alt="Juego Indie y Creatividad">
+                    <div class="card-content">
+                        <span class="tag">Creatividad</span>
+                        <h3>Joyas Indie</h3>
+                        <p>Propuestas independientes que demuestran que una gran historia, dirección artística única y mecánicas originales valen más que un presupuesto millonario.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: GÉNEROS (Cambia al hacer clic en Géneros) -->
+        <section id="generos" class="tab-content">
+            <h2>Principales Géneros del Gaming</h2>
+            <p class="intro-text">Cada jugador busca un reto distinto. Estos son los pilares que dominan el catálogo actual:</p>
+            
+            <div class="grid-two">
+                <div class="feature-card">
+                    <h3>Acción y Disparos (Shooters)</h3>
+                    <p>Enfocados en la velocidad de reacción, precisión y control táctico. Incluyen tanto experiencias en primera persona (FPS) como en tercera persona (TPS) con modos campaña y multijugador.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Rol y Fantasía (RPG / JRPG)</h3>
+                    <p>Permiten crear o personalizar un personaje, subir de nivel, mejorar habilidades y sumergirse en historias épicas con cientos de horas de contenido.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Supervivencia y Mundo Sandbox</h3>
+                    <p>El jugador empieza sin recursos y debe recolectar materiales, construir refugios y adaptarse a entornos hostiles con total libertad creativa.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Estrategia y Simulación</h3>
+                    <p>Desde gestionar ciudades completas o escuadrones en tiempo real hasta simuladores realistas de conducción, deportes y física avanzada.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: PLATAFORMAS (Cambia al hacer clic en Plataformas) -->
+        <section id="plataformas" class="tab-content">
+            <h2>Ecosistema y Plataformas de Juego</h2>
+            <p class="intro-text">La tecnología actual permite jugar prácticamente en cualquier lugar y conectar con amigos sin importar el dispositivo:</p>
+            
+            <div class="grid-two">
+                <div class="feature-card">
+                    <h3>PC Gaming</h3>
+                    <p>El máximo referente en personalización, tasas de cuadros por segundo (FPS) desbloqueadas, soporte para mods, ray tracing y compatibilidad con múltiples periféricos.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Consolas de Nueva Generación</h3>
+                    <p>Arquitecturas optimizadas con discos SSD ultrarrápidos, tiempos de carga casi inexistentes, resolución 4K y catálogos exclusivos de alto presupuesto.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Juego Portátil e Híbrido</h3>
+                    <p>Consolas híbridas y PCs portátiles que llevan experiencias completas de sobremesa a cualquier parte sin sacrificar calidad de control.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Cross-Play y Juego en la Nube</h3>
+                    <p>La barrera entre dispositivos desaparece gracias al progreso cruzado y al streaming de videojuegos directo desde servidores de alta velocidad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN FIJA INFERIOR PARA DAR MÁS CUERPO Y PROFUNDIDAD -->
+        <section class="info-box">
+            <h2>¿Qué hace inolvidable a un gran videojuego?</h2>
+            <p class="box-subtitle">Más allá de los gráficos fotorrealistas, los títulos que marcan época comparten cuatro elementos clave:</p>
+            <div class="pillars-grid">
+                <div class="pillar">
+                    <h4>1. Jugabilidad Pulida</h4>
+                    <p>Controles responsivos y mecánicas intuitivas que se sienten naturales desde el primer segundo.</p>
+                </div>
+                <div class="pillar">
+                    <h4>2. Diseño Sonoro</h4>
+                    <p>Bandas sonoras dinámicas y efectos de audio que transmiten tensión, emoción o victoria.</p>
+                </div>
+                <div class="pillar">
+                    <h4>3. Narrativa y Mundo</h4>
+                    <p>Escenarios con historia propia donde cada rincón recompensa la curiosidad del jugador.</p>
+                </div>
+                <div class="pillar">
+                    <h4>4. Comunidad Activa</h4>
+                    <p>Actualizaciones constantes, eventos especiales y jugadores que mantienen vivo el título por años.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>NEXUS GAMING</strong> | Proyecto de Desarrollo Web con Inteligencia Artificial (HTML5 y CSS3)</p>
+    </footer>
+
+    <!-- Script ligero para cambiar entre pestañas -->
+    <script>
+        function cambiarSeccion(idSeccion, botonPresionado) {
+            // Ocultar todas las secciones
+            const secciones = document.querySelectorAll('.tab-content');
+            secciones.forEach(sec => sec.classList.remove('active'));
+
+            // Quitar estado activo de todos los botones
+            const botones = document.querySelectorAll('.tab-btn');
+            botones.forEach(btn => btn.classList.remove('active'));
+
+            // Mostrar la sección elegida y resaltar su botón
+            document.getElementById(idSeccion).classList.add('active');
+            botonPresionado.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
